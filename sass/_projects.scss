@@ -1,0 +1,105 @@
+*{
+	font-family: 'Open Sans',Arial, sans-serif;
+	box-sizing:border-box;
+}
+@import "navbar";
+@import "footer";
+@import "scrollbutton";
+@import "header";
+
+.firstProjects{
+	.container{
+		.row{
+
+			.toolbar{
+				margin: 40px 15px 40px 15px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #999999;
+				.btn {
+					&:first-child{
+						background-color: #E04622;
+						color: white;
+					}
+				    text-decoration: none;
+				    cursor: pointer;
+				    display: inline-block;
+				    vertical-align: center;
+				    background-color: white;
+				    color: #E04622;
+					font-size: 12px;
+
+
+					&:focus {
+						outline: none;
+						background-color: #E04622;
+						color: white;
+						border-color: var(--darken-2);
+						box-shadow: 0 0 0 3px var(--darken-3);
+					}
+
+				}
+
+			}
+
+
+
+			#portfolio {  
+				h2{
+				    font-size: 1.4em;
+				    font-weight: 400;
+				    letter-spacing: normal;
+				    line-height: 27px;
+				    margin-top: 20px;
+				}
+				p{
+				    color: #777;
+				    line-height: 20px;
+				    margin: 0 0 20px;
+				}
+
+			    .tile{
+			    	height: 360px;
+			    	overflow: hidden;
+			    	background-color: #000;
+			    	&:before{
+			    		content: "VIEW PROJECT...";
+			    		position:absolute;
+			    		top:170px;
+			    		left:130px;
+		    		    color: #FFF;
+					    font-size: 18px;
+					    font-weight: 700;
+				        letter-spacing: -1px;
+  						text-transform: uppercase;
+			    	}
+			    	
+					img {
+					    max-width: 100%;
+					    width: 100%;
+					    height: auto;
+					    margin-bottom: 1rem;
+					    transition-duration: 0.6s;
+						transform: scale(1);
+
+					    &:hover { 
+						transform: scale(1.1);
+					    transition: all 350ms ease;
+					    opacity: 0.3;
+						}
+					  
+					}
+			    }
+			}
+
+
+		}
+
+	}
+}
+
+
+
+
+
+
+

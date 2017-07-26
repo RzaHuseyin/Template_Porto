@@ -1,0 +1,115 @@
+footer{
+	box-sizing:border-box;
+	padding: 60px 0  30px 0;
+    color: #777;
+    font-family: "Open Sans", Arial, sans-serif;
+    position: relative;
+    clear: both;
+    font-size: 0.9em;
+    min-height: 400px;
+    overflow: hidden;
+    background:  #E9EFF2 url('../img/logos/footer-construction.jpg') no-repeat 50% 50%;
+    z-index: 1;
+
+	&:after{
+	    background: #000 none repeat scroll 0 0;
+	    bottom: -233px;
+	    content: "";
+	    height: 400px;
+	    position: absolute;
+	    right: -177px;
+	    transform: rotate(50deg);
+	    width: 400px;
+	    z-index: 1;
+
+	}
+	i{
+		color:black;
+	}
+
+
+	.container{
+		.footerRow{
+			.col-md-3{
+				img{
+					width: 110px;
+					height: 40px;
+					margin-top: 75px;
+					margin-right: 75px;
+
+				}
+			}
+			.col-md-4{
+				.row{
+					.col-md-12{
+						h3{
+							color: #333;
+						    font-size: 1.8em;
+						    font-weight: 200;
+					        line-height: 27px;
+						    margin: 0 0 14px 0;
+						 
+						}
+					}
+					.col-md-6{
+						width: 50%;
+						ul{
+							line-height: 22px;
+							list-style: none;
+							padding: 0px;
+
+							li{
+							    margin-bottom: 13px;
+						        line-height: 28px;
+								font-size: 1.1em;
+
+							}
+						}
+
+					}
+				}
+			}
+			.col-md-5{
+				.row{
+					h3{
+						color: #333;
+					    font-size: 1.8em;
+					    font-weight: 200;
+				        line-height: 27px;
+					    margin: 0 0 14px 0;
+					}
+					input{
+						height: 45px;
+   						padding: 20px;
+       					font-size: 14px;
+            			line-height: 1.42857143;
+               			background-color: #fff;
+					    border: 1px solid #ccc;
+					}
+					button{
+						height: 45px;
+					}
+					&:nth-child(3){
+						padding-top: 20px;
+					}
+					a{
+						color:black;
+						&:hover{
+							color: #999999;
+						}
+					}
+				}
+			}
+
+			
+		}
+		.secondRow{
+			.col-md-12{
+				p{
+					text-align: center;;
+				}
+			}
+		}
+
+	}
+}

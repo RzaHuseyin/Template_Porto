@@ -1,0 +1,214 @@
+.navDiv{
+ 	width: 100%;
+ 	position:fixed;
+ 	z-index: 100;
+ 	top: 24px;
+	transition-duration: 0.5s;
+
+	.navbar{
+
+		border-radius:0px;
+		border:0px;
+		@media (max-width: 992px) {
+			display: none;
+			
+		}
+		.container{
+			.logoPorto{
+				position:absolute;
+				transition-duration: 0.5s;
+				@media (max-width: 992px) {
+					display: none;
+					
+				}
+				img{
+					width:131px;
+					height: 48px;
+					margin-top: 25px;
+					margin-left:40px;
+				}
+			}
+			.logoProtoFix{
+				position:absolute;
+				top:-26px;
+				transition-duration:0.3s;
+				z-index:999;
+				@media (max-width: 992px) {
+					display: none;
+					
+				}
+				img{
+					width: 324px;
+					height: 212px;
+
+				}
+
+
+				}
+			.collapse{
+				padding: 0px;
+
+				>ul{
+					float: right;
+					>li{
+
+						&:nth-child(7){
+							margin-left: 8px;
+
+							a{
+								font-size:14px;
+								font-weight: 200;
+								border-radius:100%;
+								width: 30px;
+								height: 30px;
+								margin-top: 32px;
+								padding:0px;
+								text-align: center;
+								color:black;
+								i{
+									padding-top:9px;
+									cursor: pointer;
+
+								}
+								&:hover{
+									background-color:#3B5A9A;
+									color: white;
+								}
+							}
+						}
+						&:nth-child(8){
+							a{
+								font-size:13px;
+								border-radius:100%;
+								width: 30px;
+								height: 30px;
+								margin-top: 32px;
+								padding:0px;
+								text-align: center;
+								color: black;
+								i{
+									padding-top:9px;
+								}
+								&:hover{
+									background-color:#1AA9E1;
+									color: white;
+									cursor: pointer;
+
+								}
+								}
+						}
+						&:nth-child(1){
+							a{
+								color: red;
+							}
+						}
+						a{
+							height: 94px;
+							padding:37px 14px;
+							font-size:12px;
+							font-weight:700;
+							&:hover{
+								background-color:#E04622;
+								color: white;
+		
+							}
+
+						}
+
+					}
+					.dropdown{
+						&:hover .dropdown-menu{
+							display: block;
+						}
+						.dropdown-menu{
+							border-top: 3px solid #E04622;
+							li{
+
+								a{
+									padding:4px 0 0 10px;
+									height: 30px;
+									width: 180px;
+									font-size:13px;
+									font-weight:100;
+
+									&:hover{
+										background-color:#EAEFF3;
+										color: black;
+				
+									}	
+
+
+								}
+							}
+
+						}
+
+
+					}
+				}
+			}
+		}
+	}
+	.hide-on-big {
+        position: absolute;
+        top: 9%;
+        right: 4%; 
+      	a {
+	        text-align: center;
+	        font-size:18px;
+			padding:7px 10px;
+        	background-color:#E04622;
+        	color: white;
+
+       	}
+       	@media (min-width:992px) {
+         	display:none;
+		}
+    }
+    .mobile-edit{
+    	display: none;
+    }
+            
+     @media (max-width:992px) {
+       
+       .mobile-edit {
+        position:absolute;
+        top:95px;
+        left:0;
+        right:0;
+        background:white;
+        padding:0;
+        display:none;
+        height:auto;
+        margin:0;
+        padding:15px;
+           &.active {
+             display:block;
+           }
+        
+         > li {
+           	a {
+	            margin:0;
+	            border-bottom:1px solid gray;
+	            padding:0;
+	            padding:15px;
+	            line-height: 1;
+	            height:auto;
+	            &.active {
+	             	background:#E04622;
+	             	color:white;
+	            }
+
+           	}
+        }
+        .dropdown{
+			&:hover .dropdown-menu{
+				display: block;
+			}
+		}
+            
+       	}
+     }
+    
+}
+

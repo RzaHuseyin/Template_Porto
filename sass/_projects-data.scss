@@ -1,0 +1,235 @@
+*{
+	font-family: 'Open Sans',Arial, sans-serif;
+	box-sizing:border-box;
+}
+@import "navbar";
+@import "footer";
+@import "scrollbutton";
+@import "header";
+
+.firstProjectsData{
+	.container{
+		  .row{
+        padding-top: 20px ;
+       
+          .col-md-1{
+            i{
+             font-size: 24px;
+             margin-top: 10px;
+              color:#E04622; 
+              font-weight: 100;
+              margin-right: 14px;
+            }
+             
+   
+          }
+          h2{
+            font-size: 2.2em;
+            font-weight: 300 ;
+            line-height: 42px;
+            margin: 0 0 32px 0;
+            color: #1d2127;
+          }
+          p{
+            color: #777;
+            line-height: 24px;
+            margin: 0 0 20px;
+          }
+          .col-md-8{
+            label{
+              color: #999;
+              font-size: 11px;
+            }
+            ul{
+              margin-top: 30px;
+            }
+            p{
+              line-height: 24px;
+                  color: #111;
+            }
+          }
+          .col-md-7{
+            .row{
+                padding: 20px;
+
+              .barWrapper{
+                margin-bottom: 37px;
+                &:nth-child(2){
+                  .progress-bar{
+                  transition: width 1.8s ease-in-out;
+                  }
+                }
+                &:nth-child(3){
+                  .progress-bar{
+                  transition: width 2.1s ease-in-out;
+                  }
+                }
+                &:nth-child(4){
+                  .progress-bar{
+                  transition: width 2.4s ease-in-out;
+                  }
+                }
+                .tooltip{ 
+                  position:relative;
+                  float:right;
+                }
+                .progress{
+                  border-radius:0;
+                  overflow:visible;
+                  height: 10px;
+
+                }
+                .progress-bar{
+                  background:#E04622; 
+                  transition: width 1.5s ease-in-out;
+                 
+                }
+              }
+
+            }
+          }
+          .col-md-4{
+            .row{
+              .col-md-12{
+                margin-bottom: 50px;
+                .owl-carousel{
+                  .owl-item{
+                    background-color: #000;
+                    &:before{
+                      position:absolute;
+                      top:150px;
+                      left:170px;
+                      color: #FFF;
+                      font-size: 40px;
+                      font-weight: 100;
+                    }
+                    img{
+                      transition-duration: 0.6s;
+                      transform: scale(1);
+
+                        &:hover { 
+                      transform: scale(1.1);
+                        transition: all 350ms ease;
+                        opacity: 0.3;
+                      }
+                    }
+                  }
+                }
+                  
+                .owl-nav{
+                  position: relative;
+                  text-align: center;
+                  top:-200px;
+                  .owl-prev{
+                    background-color: #E04622; 
+                    position: absolute;
+                    left:-25px;
+
+                  }
+                  .owl-next{
+                    background-color: #E04622; 
+                    position: absolute;
+                    right: -25px;
+
+                    
+                  }
+                }
+                .owl-dot{
+                  height: 60px;
+                  width: 60px;
+                  position: center;
+                  background-size: cover;
+                  &:nth-child(1){
+                    background-image: url('../img/gallery/construction-gallery-1.jpg');
+
+                  }
+                  &:nth-child(2){
+                    background-image: url('../img/gallery/construction-gallery-2.jpg');
+
+                  }
+                  &:nth-child(3){
+                    background-image: url('../img/gallery/construction-gallery-3.jpg');
+
+                  }
+                  &:nth-child(4){
+                    background-image: url('../img/gallery/construction-gallery-4.jpg');
+
+                  }
+                  &:nth-child(5){
+                    background-image: url('../img/gallery/construction-gallery-5.jpg');
+
+                  }
+                  &:nth-child(6){
+                    background-image: url('../img/gallery/construction-gallery-6.jpg');
+
+                  }
+                  span{
+                    display: none;
+                  }
+                }
+
+              }
+              .modal.and.carousel {
+                  position: fixed; // Needed because the carousel overrides the position property
+                    .modal-backdrop{
+                      opacity:0.8;
+                      cursor: zoom-out;
+                    
+
+                    }
+                  .modal-content{
+                    background-color: red;
+                    height: 580px;
+                    width: 580px;
+                  }
+                  .modal-body{
+                    padding:0;
+                    .carousel-inner{
+
+                      .item{
+
+                        div{
+                          background-color: transparent;
+                          color: white;
+                          float: right;
+                        }
+                      }
+                        
+                    }
+                      a{
+                        width: 0px;
+                        height:0px;
+
+                        &:last-child{
+                          right:-340px; 
+                          top:300px;
+                        }
+                      }
+                      #caruselFirst{
+                        left:-330px;
+                        top:300px;
+                      }
+                      #caruselSecond{
+                        float: -50px;
+                      }
+
+                      
+                      }
+                    }
+            }
+          }
+
+        }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

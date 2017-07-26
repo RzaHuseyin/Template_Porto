@@ -1,0 +1,108 @@
+*{
+	font-family: 'Open Sans',Arial, sans-serif;
+}
+
+*{
+	box-sizing:border-box;
+}
+@import "navbar";
+@import "footer";
+@import "scrollbutton";
+@import "header";
+
+// <!-- +++++++++++++++++++++        start firstContact section      ++++++++++++++ -->
+
+
+#firstContact{
+	padding-top: 50px;
+	padding-bottom: 40px;
+
+	.container{
+		.row{
+			.col-md-7{
+				.col-md-12{
+					padding:0;
+					h2{
+						font-size: 2.2em;
+					    font-weight: 300;
+					    line-height: 25px;
+					    color: #1d2127;
+					}
+					p{
+						color: #777;
+					    margin: 0 0 20px 0;
+				        font-weight: 300;
+    					line-height: 1.4;
+    					font-size: 21px;
+					}
+					form{
+						.row{
+							padding: 0 15px;
+							input{
+								border-radius: 0;
+							}
+							textarea{
+							    border: 1px solid #ccc;
+								width: 100%;
+								height: auto;
+							}
+							.btn{
+								color: white;
+								background-color:#E04622; 
+								&:hover{
+									background-color:#E35938;
+								}	
+							}
+
+						}
+					}
+				}
+			}
+			.col-md-4{
+				h4{
+				    font-size: 1.4em;
+				    font-weight: 400;
+				    letter-spacing: normal;
+				    line-height: 27px;
+				    margin: 0 0 14px 0;
+				}
+				div{
+					width:360px;
+					height: 250px;
+					background-color: orange;
+				    cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default;
+				    iframe{
+				    	width:100%;
+						height: 100%;
+						border: 0;
+
+				    }
+				}
+				ul{
+					list-style: none;
+				    padding: 0;
+				    margin-top: 30px; 
+				    margin-bottom: 30px ;
+			        font-size: 14px;
+				    line-height: 22px;
+			        color: #777;
+					li{
+					    position: relative;
+				        line-height: 24px;    
+				        margin-bottom: 13px;
+				        left: 25px;
+						i{
+						    color: #e04622;
+						    border-color: #e04622;
+					        position: absolute;
+						    left: -25px;
+						    top: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// <!-- ========================   end  firstContact section   ================= -->
