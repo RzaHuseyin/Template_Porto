@@ -9,8 +9,8 @@ var logoProtoFix=document.querySelector(".logoProtoFix");
 var navDiv=document.querySelector(".navDiv");
 
 window.onscroll=function(){
- var scrollsize=document.body;
- if (scrollsize.scrollTop>10){  
+ var scrollsize=window.pageYOffset;
+ if (scrollsize >10){  
 		companyFunc();
 
       //  ====================   if >10 `
@@ -19,41 +19,41 @@ window.onscroll=function(){
 	navDiv.style.top="0px";				
 	navDiv.style.opacity="0.9";       
  	$("#sectionfirstServices .col-md-9 .row ").eq(2).addClass('slideInUp').animate({'opacity': '1'},1000) ;   //======= for services page
- 		if(scrollsize.scrollTop>100){ //====================   if >100		
+ 		if(scrollsize >100){ //====================   if >100		
  			
 
- 			if(scrollsize.scrollTop>157){ //====================   if >157	
+ 			if(scrollsize >157){ //====================   if >157	
 	 			$("#sectionfirstCompany .nav.nav-list").css({      //======   for company page 
 	 				'position': 'fixed',
 	 				'top': '100px'
 	 			});	
 
-				if(scrollsize.scrollTop>200){ //====================   if >200
+				if(scrollsize >200){ //====================   if >200
 					$("#sectionfirstServices .col-md-9 .row ").eq(3).addClass('slideInUp').animate({'opacity': '1'},1300) ; //====== for services page
 				 	$("#scrollButton").css('display', 'block');
-				 		if(scrollsize.scrollTop>540){   //====================   if >540
+				 		if(scrollsize >540){   //====================   if >540
 						$("#third .container .row").eq(1).addClass('slideInUp').css('opacity', '1'); 
-						 	if(scrollsize.scrollTop>650){    //====================   if >650
+						 	if(scrollsize >650){    //====================   if >650
 			 				//======   for company page > history section
 						 		$("#history img").addClass('slideInUp').animate({'opacity': '1'},1500);   //======   for company page 
 						 		$("#history ul li").eq(0).addClass('slideInUp').animate({'opacity': '1'},1500);   //======   for company page 
-						 		if(scrollsize.scrollTop>700){    //====================   if >700
+						 		if(scrollsize >700){    //====================   if >700
 						 			$("#history ul li").eq(1).addClass('slideInUp').animate({'opacity': '1'},1500);   //======   for company page 
 									$("#third .container .row").eq(2).addClass('slideInUp').css('opacity', '1') ; // for index page
 
-						 			if(scrollsize.scrollTop>750){    //====================   if >750
+						 			if(scrollsize >750){    //====================   if >750
 						 			$("#history ul li").eq(2).addClass('slideInUp').animate({'opacity': '1'},1500);   //======   for company page 
-								 		if(scrollsize.scrollTop>800){
+								 		if(scrollsize >800){
 						 					$("#history ul li").eq(3).addClass('slideInUp').animate({'opacity': '1'},1500);   //======   for company page 
 
 
-									 		if(scrollsize.scrollTop>850){   //====================   if >850
+									 		if(scrollsize >850){   //====================   if >850
 					 							$("#history ul li").eq(4).addClass('slideInUp').animate({'opacity': '1'},1500);   //======   for company page 
 
-					 							if(scrollsize.scrollTop>950){    //====================   if >850
+					 							if(scrollsize >950){    //====================   if >850
 										 			$("#mission .col-md-6").eq(0).addClass('slideInUp').animate({'opacity': '1'},1000);    //======   for company page 
 										 			$("#mission .col-md-6").eq(1).addClass('slideInUp').animate({'opacity': '1'},1500);    //======   for company page 
-										 			if(scrollsize.scrollTop>2144){
+										 			if(scrollsize >2144){
 										 				$("#sectionfirstCompany .nav.nav-list").css({
 										 					'position': 'absolute',
 										 					'top': $('footer').offset().top-461 +"px"
@@ -96,9 +96,9 @@ $("#sectionfirstServices .col-md-9 .row ").eq(1).addClass('slideInUp').animate({
  ///// ===== start   scroll button common 
 $("#scrollButton").click(function() {
  	   var intervalId = setInterval(function () { 
-        var s = document.body;
-        if (s.scrollTop > 0) {
-          s.scrollTop -= 15;
+        var s = window.pageYOffset;
+        if (document.documentElement.scrollTop  > 0) {
+			document.documentElement.scrollTop  -= 15;
         } 
         else {
             clearInterval(intervalId);
@@ -202,7 +202,7 @@ buttonIcon02.click(function(){
 // owlcarousel section end
 
 
-// if(document.body.clientHeight>2000){
+// if(window.pageYOffset.clientHeight>2000){
 // 	console.log("salllalalaalaal");
 // }
 
@@ -268,27 +268,27 @@ $(".col-md-4 .owl-carousel").owlCarousel({
 
 // ====    >>>>>> company page start 
 $("#sectionfirstCompany .nav.nav-list li").eq(0).click(function() {
-	$('body').animate({scrollTop:$("#sectionfirstCompany #whoAre" ).offset().top-100}, 400)
+	$('html, body').animate({scrollTop:$("#sectionfirstCompany #whoAre" ).offset().top-100}, 400)
 	
 });
 $("#sectionfirstCompany .nav.nav-list li").eq(1).click(function() {
-	$('body').animate({scrollTop:$("#sectionfirstCompany #history" ).offset().top-100}, 400)
+	$('html, body').animate({scrollTop:$("#sectionfirstCompany #history" ).offset().top-100}, 400)
 });
 $("#sectionfirstCompany .nav.nav-list li").eq(2).click(function() {
-	$('body').animate({scrollTop:$("#sectionfirstCompany #mission" ).offset().top-100}, 400)
+	$('html, body').animate({scrollTop:$("#sectionfirstCompany #mission" ).offset().top-100}, 400)
 });
 $("#sectionfirstCompany .nav.nav-list li").eq(3).click(function() {
-	$('body').animate({scrollTop:$("#sectionfirstCompany #leadership" ).offset().top-100}, 400)
+	$('html, body').animate({scrollTop:$("#sectionfirstCompany #leadership" ).offset().top-100}, 400)
 });
 $("#sectionfirstCompany .nav.nav-list li").eq(4).click(function() {
-	$('body').animate({scrollTop:$("#sectionfirstCompany #partners" ).offset().top-100}, 400)
+	$('html, body').animate({scrollTop:$("#sectionfirstCompany #partners" ).offset().top-100}, 400)
 });
 
 
 
 function companyFunc(){
 	if ($('#sectionfirstCompany').hasClass('testForFunction')){   // for other pages do not error , this 'if' must test company page
-		var bodyTop=document.body.scrollTop
+		var bodyTop=window.pageYOffset
 		var whoAre=$("#sectionfirstCompany #whoAre" ).offset().top-101;
 		var history=$("#sectionfirstCompany #history" ).offset().top-101;
 		var mission=$("#sectionfirstCompany #mission" ).offset().top-101;
